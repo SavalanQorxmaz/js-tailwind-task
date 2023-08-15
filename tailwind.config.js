@@ -10,9 +10,15 @@ module.exports = {
       sm: { min: '577px', max: '768px' },
       md: { min: '769px', max: '992px' },
       lg: { min: '993px', max: '1200px' },
-      xl: { min: '1201px' }
+      xl: { min: '1201px' },
+      mobile_sreen: {max: '992px'}
 
     },
+    colors: {
+      'white': '#ffffff',
+      'green': '#1B5B31',
+      'section2': '#F5F0EC'
+    }
   },
   plugins: [
     function ({ addComponents }) {
