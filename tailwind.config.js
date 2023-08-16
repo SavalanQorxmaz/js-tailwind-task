@@ -14,11 +14,10 @@ module.exports = {
       mobile_sreen: {max: '992px'}
 
     },
-    colors: {
-      'white': '#ffffff',
-      'green': '#1B5B31',
-      'section2': '#F5F0EC'
-    }
+  
+    
+    
+   
   },
   plugins: [
     function ({ addComponents }) {
@@ -41,11 +40,47 @@ module.exports = {
             maxWidth: '1200px',
           },
         },
+
+        '.half-container':{
+          '@screen xs': {
+            width: '50%',
+          },
+          '@screen sm': {
+            width: '288px',
+          },
+          '@screen md': {
+            width: '384px',
+          },
+          '@screen lg': {
+            width: '496px',
+          },
+          '@screen xl': {
+            width: '600px',
+          },
+        },
         
         '.width-xs': {
           margin: 'auto',
           width: '576px'
+        },
+        '.right-container': {
+          width: '100vw',
+          marginRight: 'calc(50vw-50%)'
+        },
+        '.space-screen-container': {
+          left: 'calc(-50vw + 50%)',
+          
+        },
+        
+        ".half-screen":{
+          width: "50vw"
+
+        },
+
+        '.custom-h-720': {
+          height: '720px'
         }
+        
       }
       
       
