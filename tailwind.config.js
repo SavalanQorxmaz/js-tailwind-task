@@ -79,7 +79,8 @@ module.exports = {
 
         '.custom-h-720': {
           height: '720px'
-        }
+        },
+
         
       }
       
