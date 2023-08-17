@@ -67,8 +67,8 @@ module.exports = {
           width: '100vw',
           marginRight: 'calc(50vw-50%)'
         },
-        '.space-screen-container': {
-          left: 'calc(-50vw + 50%)',
+        '.left-container': {
+          marginLeft: 'calc(50vw - 50%)',
           
         },
         
