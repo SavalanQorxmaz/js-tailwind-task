@@ -15,30 +15,46 @@
     <img src="/logo.7c7d729a.png" alt="logo">
 
      
-    <ul class="flex [&>*]:mr-5">
+    <ul class="flex [&>*]:mr-5 xs:hidden">
         <li> <a href="#">Oferta</a></li>
         <li> <a href="#">O firmie</a></li>
         <li> <a href="#">Realizacje</a></li>
         <li> <a href="#">Kontakt</a></li>
-        <li> <a href="#">search</a></li>
+        <li> <div onclick="searchWindowF()" class="w-fit text-3xl  rotate-180 cursor-pointer">&#9740;</div></li>
     </ul>
   </nav>
+</div>
+<div id="search" class="fixed z-50 top-0 left-0 bg-black opacity-95 w-full h-full hidden">
+
+   <div class="container mt-32">
+    <div class=" flex justify-between bg-white rounded-2xl px-5 w-96 m-auto">
+        <input class=" outline-none text-xl w-80" type="text">
+        <div onclick="searchF()" class="w-fit text-3xl  rotate-180 cursor-pointer">&#9740;</div>
+
+    </div>
+   </div>
 </div>
        
     </header>
 
     <main class="w-full scroll-smooth">
-        <section style="background-color: #dcc1ab; height: 737px" class="w-full overflow-hidden">
-        
-            <div class="h-full  whitespace-nowrap  overflow-x-auto relative ">
-                <div class="h-full half-screen inline-block  border-2 border-white ">
+        <section style="background-color: #dcc1ab; height: 737px">
+            <div class="absolute z-10 bottom-32 right-20">
+                <button onclick="moveLeft()" class="p-4 bg-white opacity-60 text-4xl ">&larr;</button>
+                <button onclick="moveRight()" class="p-4 bg-white text-4xl opacity-60 ">&#x2794;</button>
+            </div>
+            <div id="slider" class="w-full h-full overflow-hidden relative ">
+           
+            <div class="h-full  whitespace-nowrap relative ">
+             
+                <div class="h-full half-screen inline-block   ">
                     <div class=" h-full half-container float-right py-5 pr-5 overflow-hidden ">
                         <h2 class="text-4xl   whitespace-normal my-8">Nowoczesna aranżacja
                             Twojego ogrodu </h2>
                             <p class="whitespace-normal mb-8">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
                             <p class="whitespace-normal flex justify-between">
                                 <button style="background-color: #1b5b31" class="rounded-lg p-2 text-xs">Skontaktuj się z nami</button> 
-                                <button style="color: #1b5b31" class="rounded-lg border-2 p-2 text-xs">Zobacz nasze realizacje &nbsp; &darr; </button>
+                                <button style="color: #1b5b31" class="rounded-lg border-2 p-2 text-xs">Zobacz nasze realizacje &nbsp; &#x2794; </button>
                             </p>
                     </div>
                 </div>
@@ -49,6 +65,7 @@
                      <img class="h-full w-full" src="/Photo1.cc9610ba.png" alt="" width="700" height="737">
                  </div>
              </div>
+        </div>
          
         </section>
 
